@@ -1,0 +1,123 @@
+---
+title: v0.7
+---
+
+
+<head>
+<meta property="og:image" content="/img/0.7.png"/>
+<meta property="og:title" content="Changelog"/>
+<meta property="og:description" content="Arank v0.7"/>
+</head>
+
+<!---
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import {useLocation} from '@docusaurus/router';
+import clsx from 'clsx';
+import styles from '../styles.module.css';
+--->
+
+![image](/img/0.7.png)
+
+# Arank V0.7 Changelog
+
+
+## 🌟 Highlights
+
+<ul style={{ listStyleType: "🌟 " }}>
+    <li>
+    <b><code>SESSION</code></b> now supports <code>pyrogram string sessions</code>.
+    </li>
+    <li>
+        <details>
+            <summary style={{ listStyleType: "none" }}>
+                An attempt to keep it <b>LightWeight</b> as our first release (expand).
+            </summary>
+            <p>Reduced Requirements and moved non-important plugins to addons.
+                <br />
+                We have observed the startup time of less than 20 secs with just official plugins and addons 🎉. <br />
+                    (startup time may be different as per your usage.)
+            </p>
+        </details>
+    </li>
+    <li>
+        <details open>
+            <summary style={{ listStyleType: "none" }}>Increasing up Localisation
+            </summary>
+            Since Arank support multiple languages, Help String and other strings have been added for the <a href="https://github.com/CoderXKrishna/Arank/tree/main/strings/strings">Translation.</a>
+            <br />
+            They are auto translated using Google service, but fixes are always welcome.
+        </details>
+        </li>
+
+</ul>
+<br />
+
+## 🧑‍💻 Plugin Changes
+- `.getmsg` (`.help utilities`)
+- `autocorrect,koo,xdasearch,ncode,omgubuntu,ghfeeds` are now in addons.
+- Setting up `INLINE_PIC` or doesn't need restart anymore.
+- `.promote -f` (`to promote with full/all available rights.`)
+- Set `CUSTOM_THUMBNAIL` to `False`, to disable thumb while uploading.
+- `.mediainfo` now support local file and updated `mediainfo` for images  
+(try to know the change.)
+- `qrcode` now support taking circle image from replied.
+- some more suprising hidden changes.
+- `.dl <message_link>`
+<br />
+
+## 👮 Manager
+- `/kang` now supports video and webm stickers.
+
+<br />
+
+## 🪁 Addons
+- Winget Search (`.help > Inline plugins > winget`).
+
+<br />
+
+## 🪲 Bug Fixes
+- fakeaction
+- App search
+- yta
+- missing `return` in `logo`.
+
+<br />
+<details><summary>[ For Plugin Creators. ]</summary>
+<ul>
+<li><code>pyArank.functions</code> is now <code>pyArank.fns</code>.</li>
+<li>Now there is no seperate development of pyArank, it is now merged with <b>CoderXKrishna/Arank</b> to speed up development.</li>
+</ul>
+</details>
+<br />
+
+## ✖️ Removed plugins
+- MegaDL
+
+<br />
+
+## 🗣️ Language Changes
+- Updated `pt-br` by [igorzbr](https://github.com/CoderXKrishna/Arank/commits?author=igorzbr), [5H4ND](https://github.com/CoderXKrishna/Arank/commits?author=5H4ND)
+- Added Uzbek language by [Technobladeuzb](https://github.com/CoderXKrishna/Arank/commits?author=Technobladeuzb)
+
+<br />
+
+<h2>
+<img src="https://img.icons8.com/fluency/48/000000/telegram-app.png" width="50"  style={{ marginTop:"-10px", float: "left", marginRight:"5px" }} />
+<a href="https://t.me/Itsz_Krish_Babess">@Itsz_Krish_Babess</a>
+</h2>
+
+
+<!--<div className={styles.buttons}>
+<Link
+              className={clsx(
+                'margin-horiz--xs button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              style={{
+                alignItems: "center"
+              }}
+              to={`https://t.me/share?url=${window.location.href}`}>
+              Share
+            </Link>
+</div>-->
